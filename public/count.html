@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оценка</title>
+    <link href="table.css" rel="stylesheet" type="text/css">
+    <script src="count.js"></script>
+</head>
+
+<body onload="rd()">
+
+<form action="/set_com" method="post"  >
+    <iframe height="500px" width="100%"></iframe>
+    <label>Оценка:</label><br>
+
+    <p><select type="select" id="sel" name="sel" size="6">
+        <option disabled>Выберите ценку</option>
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select></p>
+    <input id="n" name="n"type="hidden" name="hide"/>
+    <label>Комментарий: </label>
+    <input type="textbox" id="com" name="com" />
+    <input type="submit" value="Отправить" >
+</form>
+<div id="table_div">
+    <table id="table_data"></table>
+</div>
+
+</body>
+</html>

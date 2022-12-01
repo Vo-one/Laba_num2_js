@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файла</title>
+    <link href="tables.css" rel="stylesheet" type="text/css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+<label>Загрузить работу</label><br></br>
+
+<form action="/set_file" method="post" enctype="multipart/form-data">
+    <input type="file" name="filedata" />
+    <input type="submit" value="Выложить" />
+    <input type="button" value=" взять на оценку " onclick="rd()">
+</form>
+
+
+<div id="table_div1"></div>
+<div id="table_div2"></div>
+<div id="table_div3"></div>
+
+
+</body>
+</html>
